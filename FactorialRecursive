@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class FactorialRecursive {
+	public static void main(String args[]) {
+		Scanner in = new Scanner(System.in);
+		do{
+			System.out.println("Enter the number to find factorial:");
+			int fact = 1;
+			
+			int num = in.nextInt();
+			while(num>1) {
+				fact *= num--;
+			}
+			System.out.println("Factorial = " + fact);
+			System.out.println("Do you want to continue? Please enter Yes/No:");
+		}while(in.nextLine().equalsIgnoreCase("YES")||in.nextLine().equalsIgnoreCase("Y"));
+	}
+}
