@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class SwapTwoNumbers {
+	public static void main(String args[]) {
+		int x,y;
+		Scanner in = new Scanner(System.in);
+		System.out.println("Enter two numbers");
+		x = in.nextInt();
+		y = in.nextInt();
+		x=x+y;
+		y=x-y;
+		x-=y;
+		System.out.println("x=" + x +" and y="+y);
+	}
+}
